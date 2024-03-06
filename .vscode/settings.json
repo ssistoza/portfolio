@@ -1,0 +1,16 @@
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  "typescript.inlayHints.enumMemberValues.enabled": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "window.title": "${activeEditorShort}${separator}Profile (Settings)"
+}
