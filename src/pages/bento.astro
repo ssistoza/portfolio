@@ -7,67 +7,109 @@ import memojiMe from '../assets/memoji-face.png';
 ---
 
 <Layout title="Shane S.">
-	<main class="dark:text-white container mx-auto my-12">
-		<ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <li class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-stone-700">
+	<main class="dark:text-white container mx-auto mt-6">
+		<ul class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <li class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-stone-700 ">
         <Image src={memojiMe} alt="Face profile of Shane." />
       </li>
-      <li class="min-h-40 md:min-h-80 md:col-span-2 row-span-2 rounded-4xl p-8 bg-gradient-to-tl from-violet-700 via-violet-600 to-purple-600">
-        <h1 class="text-3xl mb-8">👋🏽, I'm Shane!</h1>
-        <p class="text-xl">I enjoy making fun things with code that helps people and bring a little bit of joy to their lives.
-        </p>
+      <li class="min-h-40 md:min-h-80 md:col-span-2 row-span-2 rounded-4xl p-8 bg-violet-300 text-violet-950">
+        <h1 class="text-3xl mb-1">👋🏽, I'm Shane!</h1>
+        <h2 class="text-xl mb-4">Software Engineer</h2>
 
-        <div class="flex flex-col space-y-10">
+        <div class="text-lg flex flex-col space-y-5">
+          <p >
+            I enjoy making fun things with code that helps people and bring a little bit of happiness to their hectic lives.
+          </p>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero iure, ullam voluptates vel, voluptas quo doloremque modi alias suscipit odit cumque delectus eligendi aut quia harum blanditiis repellendus facilis.
+            Back in 2016, It all started pitching an idea to improve very tedeious processes for the library I worked for.
+            It was my very first project working with a client and developing a web application that automated and simplified their statistical processes.
+            I directly got to see impact and joy it made on peoples life, and I was hooked.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero iure, ullam voluptates vel, voluptas quo doloremque modi alias suscipit odit cumque delectus eligendi aut quia harum blanditiis repellendus facilis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero iure, ullam voluptates vel, voluptas quo doloremque modi alias suscipit odit cumque delectus eligendi aut quia harum blanditiis repellendus facilis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero iure, ullam voluptates vel, voluptas quo doloremque modi alias suscipit odit cumque delectus eligendi aut quia harum blanditiis repellendus facilis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero iure, ullam voluptates vel, voluptas quo doloremque modi alias suscipit odit cumque delectus eligendi aut quia harum blanditiis repellendus facilis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam libero iure, ullam voluptates vel, voluptas quo doloremque modi alias suscipit odit cumque delectus eligendi aut quia harum blanditiis repellendus facilis.
+            Fast forward to today, I've had an awesome experience working:
+            <ul class="list-disc list-inside">
+              <li>at a <a href="https://www.infosys.com/">consulting firm</a>, working with clients directly</li>
+              <li>at a <a href="https://www.anthology.com/">huge edtech enterprise</a></li>
+              <li>at a small <a href="https://www.litteraeducation.com/">edtech startup</a> with fewer than 60 employees</li>
+              <li>started making small community <a href="https://github.com/grammyjs">contributions</a> to open source</li>
+            </ul>
           </p>
         </div>
-      </li>
-      <li class="min-h-40 md:min-h-80 row-span-2 rounded-4xl flex items-center justify-center bg-gradient-to-tr from-violet-700 via-violet-600 to-purple-500">
-        <!-- Add Tech Stack. -->
-        <div class="text-3xl">Box 5</div>
 
-        <!-- Things i am am curious aboout. -->
+        
       </li>
-      
-      <li class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-stone-700">
+      <li class="min-h-40 md:min-h-80 row-span-2 rounded-4xl p-8 bg-orange-300 text-orange-950">
+        <h2 class="text-3xl mb-1">Tech Stack</h2>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">TS/JS(ES6+)</li>
+          <li class="px-1">Next.js</li>
+          <li class="px-1">React.js</li>
+          <li class="px-1">Tailwind</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">Exploring</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">
+            Svelte 5
+          </li>
+          <li class="px-1">Astro</li>
+          <li class="px-1">Trpc</li>
+          <li class="px-1">Jotai</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">Used</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="px-1">Nest.js</li>
+          <li class="pr-1">Python 3</li>
+          <li class="px-1">Java</li>
+          <li class="px-1">Spring Boot</li>
+          <li class="px-1">Angular 4+</li>
+          <li class="px-1">AngularJS</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">Curious About</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">XState</li>
+          <li class="px-1">Valtio</li>
+          <li class="px-1">Enhance.dev</li>
+          <li class="px-1">Vue.js</li>
+          <li class="px-1">Angular 17</li>
+          <li class="px-1">Qwik</li>
+          <li class="px-1">Django</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">❤️</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">Tanstack Query</li>
+          <li class="px-1">Jotai</li>
+          <li class="px-1">Astro</li>
+          <li class="px-1">Trpc</li>
+        </ul>
+      </li>   
+      <li class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-green-400 text-green-950">
         <!-- Fun Stuff! (Yay or Nay) -->
-        <div class="text-3xl">Box 3</div>
+        <div class="text-3xl">Coming soon!</div>
       </li>
-      <li class="min-h-40 md:min-h-80 rounded-4xl grid grid-cols-2 p-8 gap-6 items-center justify-center bg-stone-700">
-          <a class="py-4 rounded-xl bg-stone-700 inline-flex justify-center" href="https://github.com/ssistoza">
-            <svg class="fill-stone-800 hover:fill-stone-600" width="98" height="96" xmlns="http://www.w3.org/2000/svg">
+      <li class="min-h-40 md:min-h-80 rounded-4xl grid grid-cols-2 p-8 items-center justify-center bg-cyan-300">
+          <a class="py-4 rounded-xl inline-flex justify-center" href="https://github.com/ssistoza">
+            <svg class="fill-stone-800 hover:fill-stone-600" width="60" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
             </svg>
           </a>
-          <a class="py-4 rounded-xl bg-stone-700 inline-flex justify-center" href="https://www.linkedin.com/in/shane-avery-sistoza-2085b811a/">
-            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+          <a class="py-4 rounded-xl inline-flex justify-center" href="https://www.linkedin.com/in/shane-avery-sistoza-2085b811a/">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 24 24">
               <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
             </svg>
           </a>
-          <a class="py-4 rounded-xl bg-stone-700 inline-flex justify-center" href="https://github.com/ssistoza">
-            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 337 337">
+          <a class="py-4 rounded-xl inline-flex justify-center" href="https://github.com/ssistoza">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 337 337">
               <rect x="113" y="113" width="111" height="111" rx="55.5" fill="transparent"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M23.155 112.598c-30.873 30.874-30.873 80.93 0 111.804l89.443 89.443c30.874 30.873 80.93 30.873 111.804 0l89.443-89.443c30.873-30.874 30.873-80.93 0-111.804l-89.443-89.443c-30.874-30.873-80.93-30.873-111.804 0l-89.443 89.443zm184.476 95.033c21.612-21.611 21.612-56.651 0-78.262-21.611-21.612-56.651-21.612-78.262 0-21.612 21.611-21.612 56.651 0 78.262 21.611 21.612 56.651 21.612 78.262 0z" />
             </svg>
           </a>
-          <a class="py-4 rounded-xl bg-stone-700 inline-flex justify-center" href="#">
-            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+          <a class="py-4 rounded-xl inline-flex justify-center" href="mailto:me@ssistoza.dev">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60"  viewBox="0 0 24 24">
               <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/>
             </svg>
           </a>
