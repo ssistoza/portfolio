@@ -26,6 +26,6 @@ jobs:
         with:
           version: yarn changeset version
           publish: yarn noop
-          createGithubRelease: false
+          createGithubReleases: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
