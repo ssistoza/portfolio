@@ -5330,6 +5330,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"portfolio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "portfolio@workspace:."
+  dependencies:
+    "@astrojs/check": "npm:^0.5.6"
+    "@astrojs/tailwind": "npm:^5.1.0"
+    "@changesets/cli": "npm:^2.27.1"
+    astro: "npm:^4.4.13"
+    tailwindcss: "npm:^3.4.1"
+    typescript: "npm:^5.4.2"
+  languageName: unknown
+  linkType: soft
+
 "possible-typed-array-names@npm:^1.0.0":
   version: 1.0.0
   resolution: "possible-typed-array-names@npm:1.0.0"
@@ -5931,19 +5944,6 @@ __metadata:
   checksum: 10c0/f8311b90e8d4cc46abbc14c3b292c4992438f5fd7e821d2094a7e940eaf6f67af2850c209f6412c2de5b66b4110af25226374950e90a3b3085929c104b127d48
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@astrojs/check": "npm:^0.5.6"
-    "@astrojs/tailwind": "npm:^5.1.0"
-    "@changesets/cli": "npm:^2.27.1"
-    astro: "npm:^4.4.13"
-    tailwindcss: "npm:^3.4.1"
-    typescript: "npm:^5.4.2"
-  languageName: unknown
-  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
