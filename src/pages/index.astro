@@ -1,123 +1,119 @@
 ---
-import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+
+import { Fragment } from 'astro/jsx-runtime';
+import memojiMe from '../assets/memoji-face.png';
 ---
 
-<Layout title="🫶🏽, From Shane">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+<Layout title="Shane S.">
+	<main class="dark:text-white container mx-auto mt-6">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <div class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-stone-700">
+        <Image src={memojiMe} alt="Cartoon face of Shane." />
+      </div>
+      <section class="min-h-40 md:min-h-80 md:col-span-2 row-span-2 rounded-4xl p-8 bg-violet-300 text-violet-950">
+        <h1 class="text-3xl mb-1">👋🏽, I'm Shane!</h1>
+        <h2 class="text-xl mb-4">Software Engineer</h2>
+
+        <div class="text-lg flex flex-col space-y-5">
+          <p >
+            I enjoy making fun things with code that helps people and bring a little bit of happiness to their hectic lives.
+          </p>
+
+          <p>
+            Back in 2016, It all started pitching an idea to improve very tedeious processes for the library I worked for.
+            It was my very first project working with a client and developing a web application that automated and simplified their statistical processes.
+            I directly got to see impact and joy it made on peoples life, and I was hooked.
+          </p>
+          <p>
+            Fast forward to today, I've had an awesome experience working:
+            <ul class="list-disc list-inside">
+              <li>at a <a class="underline" href="https://www.infosys.com/">consulting firm</a>, working with clients directly</li>
+              <li>at a <a class="underline" href="https://www.anthology.com/">huge edtech enterprise</a></li>
+              <li>at a small <a class="underline" href="https://www.litteraeducation.com/">edtech startup</a> with fewer than 60 employees</li>
+              <li>started making small community <a class="underline" href="https://github.com/grammyjs">contribution</a> to open source</li>
+            </ul>
+          </p>
+        </div>
+
+        
+      </section>
+      <aside class="min-h-40 md:min-h-80 row-span-2 rounded-4xl p-8 bg-orange-300 text-orange-950">
+        <h2 class="text-3xl mb-1">Tech Stack</h2>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">TS/JS(ES6+)</li>
+          <li class="px-1">Next.js</li>
+          <li class="px-1">React.js</li>
+          <li class="px-1">Tailwind</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">Exploring</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">
+            Svelte 5
+          </li>
+          <li class="px-1">Astro</li>
+          <li class="px-1">Trpc</li>
+          <li class="px-1">Jotai</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">Used</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">Nest.js</li>
+          <li class="px-1">Python 3</li>
+          <li class="px-1">Java</li>
+          <li class="px-1">Spring Boot</li>
+          <li class="px-1">Angular 4+</li>
+          <li class="px-1">AngularJS</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">Curious About</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">XState</li>
+          <li class="px-1">Valtio</li>
+          <li class="px-1">Enhance.dev</li>
+          <li class="px-1">Vue.js</li>
+          <li class="px-1">Angular 17</li>
+          <li class="px-1">Qwik</li>
+          <li class="px-1">Django</li>
+        </ul>
+
+        <h3 class="text-2xl mb-1">❤️</h3>
+        <ul class="text-base flex flex-row flex-wrap mb-4 divide-x divide-orange-950 divide-dotted">
+          <li class="pr-1">Tanstack Query</li>
+          <li class="px-1">Jotai</li>
+          <li class="px-1">Astro</li>
+          <li class="px-1">Trpc</li>
+        </ul>
+      </aside> 
+      <div class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-green-400 text-green-950">
+        <!-- Fun Stuff! (Yay or Nay) -->
+        <div class="text-3xl">Coming soon!</div>
+      </div>
+      <div class="min-h-40 md:min-h-80 rounded-4xl grid grid-cols-2 p-8 items-center justify-center bg-cyan-300">
+          <a class="py-4 rounded-xl inline-flex justify-center" href="https://github.com/ssistoza" aria-label="GitHub Profile">
+            <svg class="fill-stone-800 hover:fill-stone-600" width="60" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
+            </svg>
+          </a>
+          <a class="py-4 rounded-xl inline-flex justify-center" href="https://www.linkedin.com/in/shane-avery-sistoza-2085b811a/" aria-label="LinkedIn Profile">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 24 24">
+              <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+            </svg>
+          </a>
+          <a class="py-4 rounded-xl inline-flex justify-center" href="https://github.com/ssistoza" aria-label="Hashnode Profile">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 337 337">
+              <rect x="113" y="113" width="111" height="111" rx="55.5" fill="transparent"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.155 112.598c-30.873 30.874-30.873 80.93 0 111.804l89.443 89.443c30.874 30.873 80.93 30.873 111.804 0l89.443-89.443c30.873-30.874 30.873-80.93 0-111.804l-89.443-89.443c-30.874-30.873-80.93-30.873-111.804 0l-89.443 89.443zm184.476 95.033c21.612-21.611 21.612-56.651 0-78.262-21.611-21.612-56.651-21.612-78.262 0-21.612 21.611-21.612 56.651 0 78.262 21.611 21.612 56.651 21.612 78.262 0z" />
+            </svg>
+          </a>
+          <a class="py-4 rounded-xl inline-flex justify-center" href="mailto:me@ssistoza.dev" aria-label="Email">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60"  viewBox="0 0 24 24">
+              <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/>
+            </svg>
+          </a>
+      </div>
+    </div>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
