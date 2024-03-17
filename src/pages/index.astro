@@ -2,29 +2,32 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 
-import { Fragment } from 'astro/jsx-runtime';
 import memojiMe from '../assets/memoji-face.png';
+import ChipList from '../components/ChipList.astro';
+import Experiences from '../components/experience/List.astro';
+import Experience from '../components/experience/ListItem.astro';
+import Experience_Paragraph from '../components/experience/Paragraph.astro';
 ---
 
 <Layout title="Shane S.">
-	<main class="dark:text-white container mx-auto mt-6">
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-      <div class="min-h-40 md:min-h-80 rounded-4xl flex items-center justify-center bg-stone-700">
+	<main class="dark:text-white container mx-auto mt-6 px-4">
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-20">
+      <div class="hidden min-h-40 md:min-h-80 rounded-4xl lg:flex items-center justify-center bg-stone-700">
         <Image src={memojiMe} alt="Cartoon face of Shane." />
       </div>
       <section class="min-h-40 md:min-h-80 md:col-span-2 row-span-2 rounded-4xl p-8 bg-violet-300 text-violet-950">
-        <h1 class="text-3xl mb-1">👋🏽, I'm Shane!</h1>
+        <h1 class="text-3xl mb-1">👋🏽, I'm Shane Avery Sistoza!</h1>
         <h2 class="text-xl mb-4">Software Engineer</h2>
 
         <div class="text-lg flex flex-col space-y-5">
-          <p >
+          <p>
             I enjoy making fun things with code that helps people and bring a little bit of happiness to their hectic lives.
           </p>
 
           <p>
             Back in 2016, It all started pitching an idea to improve very tedeious processes for the library I worked for.
             It was my very first project working with a client and developing a web application that automated and simplified their statistical processes.
-            I directly got to see impact and joy it made on peoples life, and I was hooked.
+            I directly got to see impact and joy it made on peoples life, no matter how small. From then onwards, I've grown to 🫶🏽 building applications focused on helping individuals.
           </p>
           <p>
             Fast forward to today, I've had an awesome experience working:
@@ -91,29 +94,124 @@ import memojiMe from '../assets/memoji-face.png';
         <!-- Fun Stuff! (Yay or Nay) -->
         <div class="text-3xl">Coming soon!</div>
       </div>
-      <div class="min-h-40 md:min-h-80 rounded-4xl grid grid-cols-2 p-8 items-center justify-center bg-cyan-300">
-          <a class="py-4 rounded-xl inline-flex justify-center" href="https://github.com/ssistoza" aria-label="GitHub Profile">
-            <svg class="fill-stone-800 hover:fill-stone-600" width="60" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
+      <div class="min-h-40 md:min-h-80 rounded-4xl flex flex-row md:flex-col lg:flex-row items-center justify-center gap-6 bg-cyan-300">
+          <a href="https://github.com/ssistoza" aria-label="GitHub Profile">
+            <svg class="fill-stone-800 hover:fill-stone-600" width="45" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
             </svg>
           </a>
-          <a class="py-4 rounded-xl inline-flex justify-center" href="https://www.linkedin.com/in/shane-avery-sistoza-2085b811a/" aria-label="LinkedIn Profile">
-            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 24 24">
+          <a  href="https://www.linkedin.com/in/shane-avery-sistoza-2085b811a/" aria-label="LinkedIn Profile">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="45" viewBox="0 0 24 24">
               <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
             </svg>
           </a>
-          <a class="py-4 rounded-xl inline-flex justify-center" href="https://github.com/ssistoza" aria-label="Hashnode Profile">
-            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 337 337">
+          <a  href="https://github.com/ssistoza" aria-label="Hashnode Profile">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="45" viewBox="0 0 337 337">
               <rect x="113" y="113" width="111" height="111" rx="55.5" fill="transparent"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M23.155 112.598c-30.873 30.874-30.873 80.93 0 111.804l89.443 89.443c30.874 30.873 80.93 30.873 111.804 0l89.443-89.443c30.873-30.874 30.873-80.93 0-111.804l-89.443-89.443c-30.874-30.873-80.93-30.873-111.804 0l-89.443 89.443zm184.476 95.033c21.612-21.611 21.612-56.651 0-78.262-21.611-21.612-56.651-21.612-78.262 0-21.612 21.611-21.612 56.651 0 78.262 21.611 21.612 56.651 21.612 78.262 0z" />
             </svg>
           </a>
-          <a class="py-4 rounded-xl inline-flex justify-center" href="mailto:me@ssistoza.dev" aria-label="Email">
-            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="60"  viewBox="0 0 24 24">
+          <a  href="mailto:me@ssistoza.dev" aria-label="Email">
+            <svg class="fill-stone-800 hover:fill-stone-600" xmlns="http://www.w3.org/2000/svg" width="45"  viewBox="0 0 24 24">
               <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/>
             </svg>
           </a>
       </div>
     </div>
+
+    <nav class="sticky top-20 ml-8 flex-col gap-8 hidden md:flex">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </nav>
+
+    
+    <section id="experience">
+      <div class="sticky top-0 z-10 -mx-6 mb-4 p-6 w-screen bg-stone-900/75 backdrop-blur md:hidden">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-stone-200">Experience</h2>
+      </div>
+      <Experiences>
+        <Experience>
+          <Fragment slot='year'>
+            2022 — 2024  
+          </Fragment>
+          <Fragment slot='title'>
+            Software Engineer 
+            <span aria-label="at">@</span> 
+            <a class="hover:text-violet-300 focus-visible:text-violet-300" href="https://litteraeducation.com/">Littera Education</a>
+          </Fragment>
+          
+          <Experience_Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolore quod laborum, omnis animi deleniti consequatur delectus officiis praesentium culpa qui? Earum libero consequatur ad blanditiis saepe commodi aut. Molestiae.</Experience_Paragraph>
+          <ChipList values={["Typescript", "React.js", "Next.js", "Node.js", "Storybook", "Nest.js", "Playwright", "Jest", "Vitest"]}/>
+        </Experience>
+       <Experience>
+          <Fragment slot='year'>
+            2019 - 2022  
+          </Fragment>
+          <Fragment slot='title'>
+            Associate Software Engineer 
+            <span aria-label="at">@</span> 
+            <a href="https://www.anthology.com/">Anthology (Previously Blackboard)</a>
+          </Fragment>
+          
+          <Experience_Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolore quod laborum, omnis animi deleniti consequatur delectus officiis praesentium culpa qui? Earum libero consequatur ad blanditiis saepe commodi aut. Molestiae.</Experience_Paragraph>
+          <ChipList values={["Typescript", "React.js", "Next.js", "Node.js", "Storybook", "Nest.js", "Playwright", "Jest", "Vitest"]}/>
+        </Experience>
+        <Experience>
+          <Fragment slot='year'>
+            2018 - 2019  
+          </Fragment>
+          <Fragment slot='title'>
+            Associate Software Developer
+            <span aria-label="at">@</span> 
+            <a href="https://www.infosys.com/">Infosys</a>
+          </Fragment>
+          
+          
+          <Experience_Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolore quod laborum, omnis animi deleniti consequatur delectus officiis praesentium culpa qui? Earum libero consequatur ad blanditiis saepe commodi aut. Molestiae.</Experience_Paragraph>
+          <ChipList values={["Typescript", "React.js", "Next.js", "Node.js", "Storybook", "Nest.js", "Playwright", "Jest", "Vitest"]}/>
+        </Experience>
+        <Experience>
+          <Fragment slot='year'>
+            2017 - 2018  
+          </Fragment>
+          <Fragment slot='title'>
+            Software Developer 
+            <span aria-label="at">@</span> 
+            <a href="https://litteraeducation.com/">Revature</a>
+          </Fragment>
+          
+          <Experience_Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolore quod laborum, omnis animi deleniti consequatur delectus officiis praesentium culpa qui? Earum libero consequatur ad blanditiis saepe commodi aut. Molestiae.</Experience_Paragraph>
+          <ChipList values={["Typescript", "React.js", "Next.js", "Node.js", "Storybook", "Nest.js", "Playwright", "Jest", "Vitest"]}/>
+        </Experience>
+      </Experiences>
+    </section>
+
+    <section id="projects" class="flex flex-col gap-8">
+      <div class="sticky top-0 z-10 -mx-6 mb-4 p-6 w-screen bg-stone-900/75 backdrop-blur md:hidden">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-stone-200">Projects</h2>
+      </div>
+      <Experiences>
+        <Experience>
+          <Fragment slot='year'>
+            2022  
+          </Fragment>
+          <Fragment slot='title'>
+            Littera deployment dashboard
+          </Fragment>
+          
+          <Experience_Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolore quod laborum, omnis animi deleniti consequatur delectus officiis praesentium culpa qui? Earum libero consequatur ad blanditiis saepe commodi aut. Molestiae.</Experience_Paragraph>
+        </Experience>
+        <Experience>
+          <Fragment slot='year'>
+            2022  
+          </Fragment>
+          <Fragment slot='title'>
+            Littera Edi (Design System Package)
+          </Fragment>
+          
+          <Experience_Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolore quod laborum, omnis animi deleniti consequatur delectus officiis praesentium culpa qui? Earum libero consequatur ad blanditiis saepe commodi aut. Molestiae.</Experience_Paragraph>
+        </Experience>
+      </Experiences>
+    </section>
 	</main>
 </Layout>
